@@ -32,9 +32,11 @@ main {
   padding: 20px;
   border-radius: 10px;
   color: white;
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 70vw;
 }
 
 .container > * {
@@ -44,6 +46,10 @@ main {
 .button-div a {
   padding: 15px;
   margin: 15px;
+}
+
+.card-text {
+  max-width: 80%;
 }
 
 /* style for buttons */
