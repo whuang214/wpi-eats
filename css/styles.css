@@ -19,6 +19,31 @@ body {
   background-repeat: no-repeat;
 }
 
+.container {
+  margin: 30vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+}
+
+/* style for buttons */
+.link-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: #ff8c00;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+/* hover effect for buttons */
+.link-button:hover {
+  background-color: #ff6f00;
+}
+
 /* Nav Bar Styles */
 nav {
   background-color: #333;
@@ -27,17 +52,4 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-}
-
-.nav-link {
-  margin: 0 1rem;
-  padding: 0.5rem 1rem;
-  background-color: #444;
-  color: white;
-  text-decoration: none;
-  border-radius: 4px;
-}
-
-.nav-link:hover {
-  background-color: #555;
 }
