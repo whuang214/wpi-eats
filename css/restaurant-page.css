@@ -1,36 +1,26 @@
-.container {
+.text-image-container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
 }
 
-.container img {
-  flex: 1;
+.text-image-container figure {
   max-width: 100%;
   height: auto;
-  border-radius: 10px;
   margin-right: 20px;
-}
-
-.container .text-content {
-  flex: 2;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .card-text {
   margin-bottom: 15px;
 }
 
-@media (max-width: 768px) {
-  .container {
+@media (max-width: 1024px) {
+  .text-image-container {
     flex-direction: column;
     align-items: center;
   }
-
-  .container img {
-    margin-right: 0;
-    margin-bottom: 20px;
+  .text-image-container figure {
+    margin: 0;
+    margin-bottom: 10px;
   }
 }
