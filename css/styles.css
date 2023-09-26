@@ -2,7 +2,7 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box; /* remove padding and border from width to prevent whitespace*/
+  box-sizing: border-box;
 }
 
 html {
