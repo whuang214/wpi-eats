@@ -15,11 +15,29 @@ body {
   font-size: 1.2rem;
   color: white;
   /* background-color: #f4f4f4; */
-  background-image: url(https://wallpapercave.com/wp/wp4289147.jpg);
+  background-image: url("../assets/images/background.jpg");
   background-size: cover;
   display: flex;
   flex-direction: column;
   height: 100vh;
+}
+
+nav button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+#nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 main {
@@ -49,6 +67,7 @@ hr {
   max-width: 70vw;
   max-height: 70vh;
   overflow-y: auto;
+  overflow-x: hidden;
   /* firefox scrollbar */
   scrollbar-width: thin;
   scrollbar-color: rgba(255, 140, 0, 0.7) rgba(0, 0, 0, 0.2);
@@ -165,5 +184,27 @@ nav {
 
   .container {
     padding: 15px;
+  }
+}
+
+/* for responsive nav bar */
+@media (max-width: 768px) {
+  #menu-toggle {
+    display: block;
+  }
+  #nav-links {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+  }
+  #nav-links.show {
+    display: flex;
+    width: 100%;
+  }
+
+  #nav-links a {
+    background-color: transparent;
   }
 }
