@@ -30,6 +30,13 @@ main {
   flex-grow: 1;
 }
 
+hr {
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
 .container {
   background-color: rgba(0, 0, 0, 0.7);
   padding: 20px;
