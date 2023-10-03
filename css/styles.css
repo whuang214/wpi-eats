@@ -115,6 +115,18 @@ nav {
   padding: 0.5rem;
 }
 
+.end-footer a,
+.end-footer a:visited,
+.end-footer a:link {
+  text-decoration: none;
+  color: #0060df;
+}
+
+.end-footer a:hover,
+.end-footer a:active {
+  text-decoration: underline;
+}
+
 @media (max-width: 1024px) {
   .container {
     max-width: 90vw;
