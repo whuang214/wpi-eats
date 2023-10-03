@@ -42,10 +42,27 @@ main {
   max-width: 70vw;
   max-height: 70vh;
   overflow-y: auto;
+  /* firefox scrollbar */
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 140, 0, 0.7) rgba(0, 0, 0, 0.2);
 }
 
 .container > * {
   margin: 10px;
+}
+
+/* Minimalistic Scrollbar for the container */
+.container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.container::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 140, 0, 0.7);
+  border-radius: 4px;
+}
+
+.container::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .button-div a {
@@ -55,6 +72,7 @@ main {
 
 .card-text {
   max-width: 100%;
+  font-size: 1.25rem;
 }
 
 /* style for buttons */
