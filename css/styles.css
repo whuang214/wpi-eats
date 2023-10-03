@@ -171,6 +171,7 @@ nav {
   text-decoration: underline;
 }
 
+/* responsive container */
 @media (max-width: 1024px) {
   .container {
     max-width: 90vw;
