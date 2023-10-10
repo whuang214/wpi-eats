@@ -5,11 +5,65 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About Me</title>
+  <link rel="stylesheet" href="../css/styles.css" type="text/css" />
+  <link rel="stylesheet" href="../css/about.css" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
 </head>
 
 <body>
-  <h1>About Me</h1>
-  <p>This is a description about me.</p>
+  <nav>
+    <div id="nav-container">
+      <a href="../index.html" class="link-button">Home</a>
+      <div id="nav-links">
+        <a href="../restaurants.html" class="link-button">Restaurants</a>
+        <a href="../about/project.html" class="link-button">About Project</a>
+        <a href="../about/me.html" class="link-button">About Me</a>
+        <a href="../about/contact.html" class="link-button">Contact Me</a>
+      </div>
+      <button class="link-button" id="menu-toggle" onclick="toggleMenu()">☰</button>
+    </div>
+  </nav>
+
+  <main>
+    <article class="container about-me-container">
+      <header>
+        <h1>About Me</h1>
+      </header>
+
+      <hr>
+
+      <div class="about-me-content">
+        <figure>
+          <img src="../assets/images/me.jpeg" alt="Your Picture" />
+          <figcaption>Will Huang</figcaption>
+        </figure>
+
+        <section class="about-me-text">
+          <p>
+            Hi, my name is Will! I am a current Senior at Worcester Polytechnic Institute majoring in Computer Science
+            and a recent graduate of General Assembly's Software Engineering Immersive. My journey in tech is fueled by
+            a fusion of theoretical foundations from my academic pursuits and hands-on experience crafting full-stack
+            applications. I thrive on transforming ideas into tangible software solutions, and I'm driven by the endless
+            possibilities of technology.
+
+            When I'm not coding, you can find me on the volleyball court, building or repairing PCs, delving into AI
+            innovations, or editing videos.
+          </p>
+          <footer class="about-me-links">
+            <h3>Connect with me</h3>
+            <ul>
+              <li><a href="https://github.com/whuang214" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+              <li><a href="https://linkedin.com/in/whuang214" target="_blank"><i class="fab fa-linkedin"></i>
+                  LinkedIn</a></li>
+              <li><a href="https://www.instagram.com/whuang214" target="_blank"><i class="fab fa-instagram"></i>
+                  Instagram</a></li>
+            </ul>
+          </footer>
+        </section>
+      </div>
+    </article>
+  </main>
 
   <footer class="end-footer">
     <div class="footer-container">
@@ -18,15 +72,26 @@
         <p>Email: whuang3@wpi.edu</p>
       </div>
       <div class="footer-section">
-        <h4>Follow Me</h4>
-        <a href="https://github.com/whuang214">GitHub</a> | <a href="https://linkedin.com/in/whuang214">LinkedIn</a> |
-        <a href="https://www.instagram.com/whuang214">Instagram</a>
+        <div class="footer-section">
+          <h4>Follow Me</h4>
+          <a href="https://github.com/whuang214"><i class="fab fa-github"></i> GitHub</a> |
+          <a href="https://linkedin.com/in/whuang214"><i class="fab fa-linkedin"></i> LinkedIn</a> |
+          <a href="https://www.instagram.com/whuang214"><i class="fab fa-instagram"></i> Instagram</a>
+        </div>
       </div>
     </div>
     <div class="footer-bottom">
       <p>&copy; 2023 WPI Eats. All rights reserved.</p>
     </div>
   </footer>
+
+  <script>
+    function toggleMenu() {
+      const navLinks = document.getElementById('nav-links');
+      navLinks.classList.toggle('show');
+    }
+  </script>
+
 </body>
 
 </html>
