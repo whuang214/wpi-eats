@@ -110,7 +110,6 @@ hr {
   color: white;
   text-decoration: none;
   border-radius: 10px;
-  transition: background-color 0.3s ease;
 }
 
 /* hover effect for buttons */
@@ -207,5 +206,13 @@ nav {
 
   #nav-links a {
     background-color: transparent;
+  }
+
+  #nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  #nav-links a:active {
+    background-color: rgba(255, 255, 255, 0.2);
   }
 }
