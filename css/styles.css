@@ -22,13 +22,6 @@ body {
   height: 100vh;
 }
 
-nav button {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  outline: none;
-}
-
 #menu-toggle {
   display: none;
 }
@@ -177,6 +170,13 @@ hr {
 }
 
 /* style for buttons */
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
 .link-button {
   display: inline-block;
   padding: 10px 20px;

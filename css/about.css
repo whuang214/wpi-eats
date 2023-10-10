@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 70vw;
 }
 
 .about-me-content {
@@ -11,19 +12,49 @@
   justify-content: space-evenly;
 }
 
+.contact-me-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-top: 20px;
+}
+
 .about-me-content img {
   width: 200px;
   height: 200px;
   border-radius: 50%;
 }
 
-.about-me-content .about-me-text {
-  max-width: 60%;
+.about-me-container .about-me-text {
+  width: 80%;
 }
 
-.about-me-content .about-me-links {
+.about-me-container .about-me-links {
   font-size: 1.5rem;
   margin-bottom: 20px;
+}
+
+/* Form Styles */
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#contact-form button {
+  margin-top: 10px;
 }
 
 /* responsive */
@@ -42,5 +73,9 @@
   .about-me-content .about-me-text {
     max-width: 100%;
     text-align: center;
+  }
+
+  .about-me-container .about-me-links {
+    font-size: 1rem;
   }
 }
