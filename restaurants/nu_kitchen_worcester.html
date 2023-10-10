@@ -1,12 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NU Kitchen Worcester</title>
-  </head>
-  <body>
-    <h1>NU Kitchen Worcester</h1>
-    <p>This is a description for NU Kitchen Worcester</p>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/styles.css" type="text/css" />
+  <link rel="stylesheet" href="../css/restaurant-page.css" type="text/css" />
+  <!-- For icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <title>Nu Kitchen Worcester</title>
+</head>
+
+<body>
+  <nav>
+    <div id="nav-container">
+      <a href="../index.html" class="link-button">Home</a>
+      <div id="nav-links">
+        <a href="../restaurants.html" class="link-button">Restaurants</a>
+        <a href="../about/project.html" class="link-button">About Project</a>
+        <a href="../about/me.html" class="link-button">About Me</a>
+        <a href="../about/contact.html" class="link-button">Contact Me</a>
+      </div>
+      <button class="link-button" id="menu-toggle" onclick="toggleMenu()">☰</button>
+    </div>
+  </nav>
+  <main>
+    <article class="container">
+      <header>
+        <h1>Nu Kitchen Worcester</h1>
+      </header>
+
+      <hr>
+
+      <div class="text-image-container">
+        <figure>
+          <img src="../assets/images/nu_kitchen_worcester/logo.png" alt="Nu Kitchen Worcester" />
+          <figcaption>Nu Kitchen Worcester</figcaption>
+        </figure>
+
+        <section class="text-content">
+          <p class="card-text">
+            Nu Kitchen Worcester is a modern cafe that offers a variety of healthy and delicious options. From smoothie
+            bowls and salads to coffee and craft beer, this cafe has something for everyone. The atmosphere is relaxed
+            and welcoming, making it a great spot for both work and social gatherings. Whether you're a WPI student
+            looking for a healthy meal or just someone who enjoys good food and drinks, Nu Kitchen is the place to be.
+          </p>
+
+          <div>
+            <p class="card-text restaurant-container-side">
+              <strong>Category:</strong> Cafe
+              <br />
+              <strong>Location:</strong> <a href="https://maps.app.goo.gl/q5Lq5dRSdg1XDGZn8" target="_blank">335
+                Chandler St, Worcester, MA 01602</a>
+              <strong>Phone:</strong> (508) 926-8800
+              <br />
+              <strong>Hours:</strong>
+              Monday - Sunday: 8:00 am - 8:00 pm
+              <br />
+              <strong>Price Range:</strong> $$ - Moderate
+              <br />
+              <strong>Accepts Goatbucks:</strong> No
+            </p>
+            <footer>
+              <ul>
+                <li><a href="https://www.thenukitchen.com/" target="_blank"><i class="fas fa-globe"></i> Official
+                    Website</a></li>
+                <li><a href="https://www.yelp.com/biz/nu-kitchen-worcester" target="_blank"><i class="fab fa-yelp"></i>
+                    Yelp</a></li>
+              </ul>
+            </footer>
+          </div>
+        </section>
+      </div>
+    </article>
+  </main>
+
+  <footer class="end-footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>Contact</h4>
+        <p>Email: whuang3@wpi.edu</p>
+      </div>
+      <div class="footer-section">
+        <h4>Follow Me</h4>
+        <a href="https://github.com/whuang214"><i class="fab fa-github"></i> GitHub</a> |
+        <a href="https://linkedin.com/in/whuang214"><i class="fab fa-linkedin"></i> LinkedIn</a> |
+        <a href="https://www.instagram.com/whuang214"><i class="fab fa-instagram"></i> Instagram</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2023 WPI Eats. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const navLinks = document.getElementById('nav-links');
+      navLinks.classList.toggle('show');
+    }
+  </script>
+</body>
+
 </html>
