@@ -1,12 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Boomers</title>
-  </head>
-  <body>
-    <h1>Boomers</h1>
-    <p>This is a description for Boomers</p>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/styles.css" type="text/css" />
+  <link rel="stylesheet" href="../css/restaurant-page.css" type="text/css" />
+  <!-- For icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <title>Boomers Subs & Deli</title>
+</head>
+
+<body>
+  <nav>
+    <div id="nav-container">
+      <a href="../index.html" class="link-button">Home</a>
+      <div id="nav-links">
+        <a href="../restaurants.html" class="link-button">Restaurants</a>
+        <a href="../about/project.html" class="link-button">About Project</a>
+        <a href="../about/me.html" class="link-button">About Me</a>
+        <a href="../about/contact.html" class="link-button">Contact Me</a>
+      </div>
+      <button class="link-button" id="menu-toggle" onclick="toggleMenu()">☰</button>
+    </div>
+  </nav>
+  <main>
+    <article class="container">
+      <header>
+        <h1>Boomers Subs & Deli</h1>
+      </header>
+
+      <hr>
+
+      <div class="text-image-container">
+        <figure>
+          <img src="../assets/images/boomers/logo.png" alt="Boomers" />
+          <figcaption>Boomers Subs & Deli</figcaption>
+        </figure>
+
+        <section class="text-content">
+          <p class="card-text">
+            Boomers is a local favorite in Worcester, MA, offering a wide range of pizzas, subs, and deli items. Known
+            for its casual atmosphere and quick service, Boomers is the go-to spot for WPI students looking for a quick
+            bite or a hearty meal. With a menu that includes everything from classic pepperoni pizza to gourmet subs,
+            there's something for everyone at Boomers.
+          </p>
+
+          <div>
+            <p class="card-text restaurant-container-side">
+              <strong>Category:</strong> Take-Out
+              <br />
+              <strong>Location:</strong> <a href="https://maps.app.goo.gl/kw6MvkoVdZM8mCnm7" target="_blank">93 Highland
+                St #2724,
+                Worcester, MA 01609</a>
+              <strong>Phone:</strong> (508) 791-5551
+              <br />
+              <strong>Hours:</strong>
+              Monday - Saturday: 10:00 am - 10:00 pm
+              <br />
+              Sunday: 12:00 pm - 10:00 pm
+              <br />
+              <strong>Price Range:</strong> $ - Inexpensive
+              <br />
+              <strong>Accepts Goatbucks:</strong> No
+            </p>
+            <footer>
+              <ul>
+                <li><a href="https://boomerspizzeria.com/" target="_blank"><i class="fas fa-globe"></i> Official
+                    Website</a></li>
+                <li><a href="https://www.yelp.com/biz/boomers-pizza-sub-and-deli-worcester" target="_blank"><i
+                      class="fab fa-yelp"></i> Yelp</a></li>
+              </ul>
+            </footer>
+          </div>
+        </section>
+      </div>
+    </article>
+  </main>
+
+  <footer class="end-footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>Contact</h4>
+        <p>Email: whuang3@wpi.edu</p>
+      </div>
+      <div class="footer-section">
+        <h4>Follow Me</h4>
+        <a href="https://github.com/whuang214"><i class="fab fa-github"></i> GitHub</a> |
+        <a href="https://linkedin.com/in/whuang214"><i class="fab fa-linkedin"></i> LinkedIn</a> |
+        <a href="https://www.instagram.com/whuang214"><i class="fab fa-instagram"></i> Instagram</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2023 WPI Eats. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const navLinks = document.getElementById('nav-links');
+      navLinks.classList.toggle('show');
+    }
+  </script>
+</body>
+
 </html>
