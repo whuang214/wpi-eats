@@ -29,7 +29,8 @@
       <h1>Contact Me</h1>
       <div class="contact-me-content">
         <section class="about-me-text">
-          <form id="contact-form">
+          <!-- Send a post request to a route later -->
+          <form id="contact-form" onsubmit="handleSubmit();">
             <input type="text" name="first_name" placeholder="First Name" required>
             <input type="text" name="last_name" placeholder="Last Name" required>
             <input type="email" name="email" placeholder="Email" required>
@@ -75,6 +76,9 @@
     function toggleMenu() {
       const navLinks = document.getElementById('nav-links');
       navLinks.classList.toggle('show');
+    }
+    function handleSubmit() {
+      alert('This is a placeholder.');
     }
   </script>
 </body>
