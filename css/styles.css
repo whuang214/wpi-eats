@@ -12,7 +12,7 @@ html {
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: white;
   /* background-color: #f4f4f4; */
   background-image: url("../assets/images/background.jpg");
@@ -78,6 +78,7 @@ hr {
 .container p {
   margin-bottom: 10px;
   color: rgba(255, 255, 255, 0.9);
+  font-size: 1.4rem;
 }
 
 .container ul {
@@ -133,6 +134,7 @@ hr {
 
 .container footer ul {
   list-style: none;
+  font-size: 1.2rem;
   display: flex;
   padding: 0;
   margin: 0;
@@ -150,12 +152,13 @@ hr {
 .container footer ul li a:visited,
 .container footer ul li a:link {
   text-decoration: none;
-  color: #0060df;
+  color: white;
 }
 
 .container footer ul li a:hover,
 .container footer ul li a:active {
   text-decoration: underline;
+  color: #0060df;
 }
 
 .button-div a {
