@@ -1,12 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Taqueria Del Pueblo</title>
-  </head>
-  <body>
-    <h1>Taqueria Del Pueblo</h1>
-    <p>This is a description for Taqueria Del Pueblo</p>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/styles.css" type="text/css" />
+  <link rel="stylesheet" href="../css/restaurant-page.css" type="text/css" />
+  <!-- For icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <title>Taqueria Del Pueblo</title>
+</head>
+
+<body>
+  <nav>
+    <div id="nav-container">
+      <a href="../index.html" class="link-button">Home</a>
+      <div id="nav-links">
+        <a href="../restaurants.html" class="link-button">Restaurants</a>
+        <a href="../about/project.html" class="link-button">About Project</a>
+        <a href="../about/me.html" class="link-button">About Me</a>
+        <a href="../about/contact.html" class="link-button">Contact Me</a>
+      </div>
+      <button class="link-button" id="menu-toggle" onclick="toggleMenu()">☰</button>
+    </div>
+  </nav>
+  <main>
+    <article class="container">
+      <header>
+        <h1>Taqueria Del Pueblo</h1>
+      </header>
+
+      <hr>
+
+      <div class="text-image-container">
+        <figure>
+          <img src="../assets/images/taqueria_del_pueblo/logo.jpg" alt="Taqueria Del Pueblo" />
+          <figcaption>Taqueria Del Pueblo Restaurant</figcaption>
+        </figure>
+
+        <section class="text-content">
+          <p class="card-text">
+            Taqueria Del Pueblo, situated on Highland Street in Worcester, MA, is a hidden gem for authentic Mexican
+            cuisine. This cozy eatery offers a vibrant atmosphere that instantly transports you to the heart of Mexico.
+            With an extensive menu featuring classics like tacos, burritos, and enchiladas, as well as unique dishes
+            that showcase the rich flavors of Mexican cooking, there's something for everyone to enjoy. The restaurant
+            prides itself on using fresh, locally-sourced ingredients to create meals that are both delicious and
+            sustainable. Whether you're a WPI student craving a quick bite or someone looking for a family-friendly
+            dining experience, Taqueria Del Pueblo offers a warm welcome and mouth-watering food that will have you
+            coming back for more
+          </p>
+
+          <div>
+            <p class="card-text restaurant-container-side">
+              <strong>Category:</strong> Mexican
+              <br />
+              <strong>Location:</strong> <a href="https://maps.app.goo.gl/pA7iBhJdtee5jPfW8" target="_blank">57
+                Highland St, Worcester, MA 01609</a>
+              <strong>Phone:</strong> (508) 304-7778
+              <br />
+              <strong>Hours:</strong>
+              Tuesday - Thursday: 4:00 PM — 10:00 PM
+              <br />
+              Friday - Saturday: 1:00 PM — 10:00 PM
+              <br />
+              Sunday & Monday: Closed
+              <br />
+              <strong>Price Range:</strong> $$ - Moderate
+              <br />
+              <strong>Accepts Goatbucks:</strong> No
+            </p>
+            <footer>
+              <ul>
+                <li><a href="https://taqueriadelpueblo.org/" target="_blank"><i class="fas fa-globe"></i> Official
+                    Website</a></li>
+                <li><a href="https://yelp.com/biz/taqueria-del-pueblo-worcester" target="_blank"><i
+                      class="fab fa-yelp"></i> Yelp</a></li>
+                <li><a href="https://facebook.com/taqueriadelpuebloo/" target="_blank"><i class="fab fa-facebook"></i>
+                  </a></li>
+              </ul>
+            </footer>
+          </div>
+        </section>
+      </div>
+    </article>
+  </main>
+
+  <footer class="end-footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>Contact</h4>
+        <p>Email: whuang3@wpi.edu</p>
+      </div>
+      <div class="footer-section">
+        <h4>Follow Me</h4>
+        <a href="https://github.com/whuang214"><i class="fab fa-github"></i> GitHub</a> |
+        <a href="https://linkedin.com/in/whuang214"><i class="fab fa-linkedin"></i> LinkedIn</a> |
+        <a href="https://www.instagram.com/whuang214"><i class="fab fa-instagram"></i> Instagram</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2023 WPI Eats. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const navLinks = document.getElementById('nav-links');
+      navLinks.classList.toggle('show');
+    }
+  </script>
+</body>
+
 </html>
