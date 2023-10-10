@@ -27,6 +27,10 @@
   border-radius: 50%;
 }
 
+.about-me-content figure {
+  margin-right: 20px;
+}
+
 .about-me-container .about-me-text {
   width: 80%;
 }
@@ -78,6 +82,7 @@
   .about-me-content .about-me-text {
     max-width: 100%;
     text-align: center;
+    margin-right: 0;
   }
 
   .about-me-container .about-me-links {
