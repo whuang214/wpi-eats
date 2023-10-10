@@ -1,12 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Fix Burger Bar</title>
-  </head>
-  <body>
-    <h1>The Fix Burger Bar</h1>
-    <p>This is a description for The Fix Burger Bar</p>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/styles.css" type="text/css" />
+  <link rel="stylesheet" href="../css/restaurant-page.css" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <title>The Fix Burger Bar</title>
+</head>
+
+<body>
+  <nav>
+    <div id="nav-container">
+      <a href="../index.html" class="link-button">Home</a>
+      <div id="nav-links">
+        <a href="../restaurants.html" class="link-button">Restaurants</a>
+        <a href="../about/project.html" class="link-button">About Project</a>
+        <a href="../about/me.html" class="link-button">About Me</a>
+        <a href="../about/contact.html" class="link-button">Contact Me</a>
+      </div>
+      <button class="link-button" id="menu-toggle" onclick="toggleMenu()">☰</button>
+    </div>
+  </nav>
+
+  <main>
+    <article class="container">
+      <header>
+        <h1>The Fix Burger Bar</h1>
+      </header>
+
+      <hr>
+
+      <div class="text-image-container">
+        <figure>
+          <img src="../assets/images/the_fix_burger_bar/logo.png" alt="The Fix Burger Bar" />
+          <figcaption>The Fix Burger Bar Logo</figcaption>
+        </figure>
+
+        <section class="text-content">
+          <p class="card-text">
+            Nestled in the heart of Worcester, The Fix Burger Bar is a culinary gem that transforms the classic American
+            burger into an extraordinary experience. With locally-sourced beef and over 40 unique toppings, each burger
+            is a customizable masterpiece. Beyond burgers, the restaurant offers an array of craft beers and handcrafted
+            cocktails, all set in a vibrant, modern atmosphere. Weekly events like live music and trivia make it a go-to
+            spot for WPI students and locals alike, offering not just a meal, but a memorable dining adventure.
+          </p>
+
+
+          <div>
+            <p class="card-text restaurant-container-side">
+              <strong>Category:</strong> Dinner
+              <br />
+              <strong>Location:</strong> <a href="https://maps.app.goo.gl/s15hvkHTxSjrqPrz9" target="_blank">108 Grove
+                Street, Worcester, MA 01605</a>
+              <strong>Phone:</strong> (774) 823-3327
+              <br />
+              <strong>Hours:</strong>
+              Sunday–Thursday: 12:00–10:00 pm
+              <br />
+              Friday & Saturday: 12:00–Midnight
+              <br />
+              <strong>Price Range:</strong> $$ - Moderate
+              <br />
+              <strong>Accepts Goatbucks:</strong> Yes
+            </p>
+            <footer>
+              <ul>
+                <li><a href="https://www.thefixburgerbar.com/" target="_blank"><i class="fas fa-globe"></i> Official
+                    Website</a></li>
+                <li><a href="https://www.facebook.com/thefixburgerbar/" target="_blank"><i class="fab fa-facebook"></i>
+                    Facebook</a></li>
+                <li><a href="https://twitter.com/thefixburgerbar" target="_blank"><i class="fab fa-twitter"></i>
+                    Twitter</a></li>
+                <li><a href="https://www.instagram.com/thefixburgerbar/" target="_blank"><i
+                      class="fab fa-instagram"></i> Instagram</a></li>
+              </ul>
+            </footer>
+          </div>
+        </section>
+      </div>
+    </article>
+  </main>
+
+  <footer class="end-footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>Contact</h4>
+        <p>Email: whuang3@wpi.edu</p>
+      </div>
+      <div class="footer-section">
+        <h4>Follow Me</h4>
+        <a href="https://github.com/whuang214"><i class="fab fa-github"></i> GitHub</a> |
+        <a href="https://linkedin.com/in/whuang214"><i class="fab fa-linkedin"></i> LinkedIn</a> |
+        <a href="https://www.instagram.com/whuang214"><i class="fab fa-instagram"></i> Instagram</a>
+      </div>
+    </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2023 WPI Eats. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+
 </html>
